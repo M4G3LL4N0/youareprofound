@@ -1,0 +1,54 @@
+{
+  "schema_version": "1.0",
+  "generated": "2026-05-10",
+  "tasks": [
+    {
+      "id": "mirror-demo-engine",
+      "title": "AI Mirror demo response engine",
+      "description": "Local, clearly labeled demo responses for Profound Mirror—no fake therapy or hidden model calls.",
+      "priority": "high"
+    },
+    {
+      "id": "path-detail-pages",
+      "title": "Path detail pages",
+      "description": "Route per path slug with lesson outline and CTAs back to /app.",
+      "priority": "high"
+    },
+    {
+      "id": "content-library",
+      "title": "Expanded wisdom/mantra content library",
+      "description": "Grow lib/content.ts (or split data files) with more paths, prompts, and mantras.",
+      "priority": "medium"
+    },
+    {
+      "id": "onboarding-quiz",
+      "title": "Onboarding quiz",
+      "description": "Lightweight questions to suggest a starting path—static first.",
+      "priority": "medium"
+    },
+    {
+      "id": "seo-social",
+      "title": "SEO metadata/social cards",
+      "description": "Add OG image, canonical URL env, and refined metadata fields.",
+      "priority": "medium"
+    },
+    {
+      "id": "supabase-later",
+      "title": "Supabase auth later only when requested",
+      "description": "No auth scaffolding until product asks for accounts.",
+      "priority": "low"
+    },
+    {
+      "id": "stripe-later",
+      "title": "Stripe premium later only when requested",
+      "description": "Defer payments until scope and compliance are explicit.",
+      "priority": "low"
+    },
+    {
+      "id": "disk-cleanup-verify",
+      "title": "Disk cleanup verification",
+      "description": "After builds, run safe cleanup recipe and confirm project size and large files.",
+      "priority": "low"
+    }
+  ]
+}

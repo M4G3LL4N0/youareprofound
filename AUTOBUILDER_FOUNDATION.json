@@ -1,0 +1,336 @@
+{
+  "schema_version": "1.0",
+  "project_folder": "youareprofound",
+  "startup_name": "YouAreProfound",
+  "aliases": ["ProfoundOS", "Profound Mirror", "Profound Paths"],
+  "domain": "",
+  "category": "wellness wisdom learning reflective AI meaning operating system",
+  "stage": "mvp",
+  "one_line_description": "Turn timeless wisdom into clarity, peace, and direction people can actually live.",
+  "target_users": [
+    "people seeking peace and clarity",
+    "people navigating uncertainty or life transition",
+    "founders and high performers under pressure",
+    "people interested in philosophy, spirituality, and meaning",
+    "users who consume wisdom content but need structure and integration"
+  ],
+  "core_problem": "People consume powerful wisdom content but rarely absorb it, structure it, remember it, or apply it to daily life.",
+  "core_solution": "A premium meaning operating system with guided wisdom paths, fading quotes, mantras, reflective prompts, and a Profound Mirror interface for personalized self-understanding.",
+  "differentiation": "Not a quote site or meditation clone. The product focuses on distillation, personalization, ritual, visual calm, and integration of wisdom into lived understanding.",
+  "mvp_scope": {
+    "primary_goal": "Create a premium demo-ready landing page and lightweight app shell that clearly communicates the product vision.",
+    "included_features": [
+      "premium homepage",
+      "animated fading quote engine",
+      "Profound Paths section",
+      "Profound Mirror preview with working textarea and local demo response",
+      "structured content file",
+      "/app dashboard shell",
+      "responsive design",
+      "manual Vercel readiness"
+    ],
+    "excluded_for_now": [
+      "real paid subscriptions",
+      "real auth",
+      "database persistence",
+      "licensed full talk library",
+      "production AI API integration"
+    ],
+    "future_features": [
+      "AI-powered Profound Mirror",
+      "Supabase auth",
+      "saved reflections",
+      "personalized paths",
+      "daily mantra notifications",
+      "licensed/partner content library",
+      "premium subscription"
+    ]
+  },
+  "website": {
+    "primary_message": "You are not lost. You are profound.",
+    "tone": "calm, premium, profound, intelligent, emotionally steady",
+    "routes": ["/", "/app"],
+    "sections": [
+      "hero",
+      "fading quotes",
+      "problem/solution",
+      "Profound Paths",
+      "Profound Mirror",
+      "experience design",
+      "CTA"
+    ],
+    "cta": "Begin Your Path",
+    "seo_keywords": [
+      "meaning",
+      "wisdom",
+      "life purpose",
+      "philosophy",
+      "reflection",
+      "mantras",
+      "self understanding",
+      "inner peace",
+      "AI reflection"
+    ]
+  },
+  "product": {
+    "core_flows": [
+      "visitor reads homepage",
+      "visitor explores wisdom paths",
+      "visitor previews Profound Mirror",
+      "user enters /app dashboard",
+      "user chooses a path",
+      "user writes a reflection"
+    ],
+    "demo_flows": [
+      "landing page to paths",
+      "landing page to mirror preview",
+      "dashboard path card review",
+      "dashboard mirror input"
+    ],
+    "data_model_notes": [
+      "Paths, lessons, quotes, mantras, and reflection prompts live in lib/content.ts.",
+      "Future database can store users, reflections, path progress, saved mantras, and daily check-ins."
+    ],
+    "auth_required": false,
+    "database_required": false,
+    "api_required": false
+  },
+  "design_system": {
+    "visual_style": "dark cinematic premium glass UI with soft gradient light, atmospheric motion, elegant typography, and luxury-tech calm",
+    "colors": ["deep navy", "black", "warm orange", "rose", "soft blue", "white transparency"],
+    "typography": "large refined headings, soft readable body text, uppercase micro-labels",
+    "layout_principles": [
+      "clear hero hierarchy",
+      "large breathing room",
+      "glass cards",
+      "responsive grids",
+      "high contrast",
+      "calm animations",
+      "premium but not cluttered"
+    ],
+    "animation_style": "slow fades, quote dissolve, gentle ambient movement, hover lift",
+    "avoid": [
+      "generic SaaS layout",
+      "cheap self-help styling",
+      "overcrowded gradients",
+      "unreadable text",
+      "duplicated headers",
+      "copying Noaerth exactly"
+    ]
+  },
+  "technical_stack": {
+    "framework": "Next.js 16 (App Router, Turbopack)",
+    "language": "TypeScript",
+    "styling": "Tailwind CSS v4",
+    "package_manager": "pnpm",
+    "deployment": "Vercel (manual)",
+    "database": "",
+    "auth": "",
+    "apis": []
+  },
+  "important_files": {
+    "routes": ["app/page.tsx", "app/app/page.tsx", "app/api/checkout/route.ts"],
+    "components": [
+      "components/Navbar.tsx",
+      "components/AmbientBackground.tsx",
+      "components/QuoteEngine.tsx",
+      "components/ProfoundMirrorTeaser.tsx",
+      "components/app/AppSidebar.tsx",
+      "components/app/AppTopbar.tsx",
+      "components/app/AppQuoteRotator.tsx",
+      "components/app/ProfoundMirrorPreview.tsx"
+    ],
+    "lib": ["lib/content.ts"],
+    "data": [],
+    "public_assets": [
+      "public/favicon.ico",
+      "public/file.svg",
+      "public/globe.svg",
+      "public/next.svg",
+      "public/vercel.svg",
+      "public/window.svg"
+    ],
+    "config": [
+      "package.json",
+      "pnpm-lock.yaml",
+      "tsconfig.json",
+      "next.config.ts",
+      "postcss.config.mjs",
+      "eslint.config.mjs",
+      ".gitignore"
+    ]
+  },
+  "preserve": {
+    "copy": [
+      "You are not lost. You are profound.",
+      "Turn timeless wisdom into clarity, peace, and direction you can actually live.",
+      "Not just inspiration. Integration.",
+      "Profound Mirror",
+      "Profound Paths"
+    ],
+    "features": [
+      "fading quote engine",
+      "guided paths",
+      "premium homepage",
+      "dashboard shell",
+      "mirror preview"
+    ],
+    "components": [
+      "QuoteEngine",
+      "AmbientBackground",
+      "Navbar",
+      "ProfoundMirrorTeaser",
+      "AppSidebar",
+      "AppTopbar",
+      "AppQuoteRotator",
+      "ProfoundMirrorPreview"
+    ],
+    "assets": [],
+    "technical_decisions": [
+      "pnpm only",
+      "manual Vercel deployment",
+      "static-first MVP",
+      "no database until needed",
+      "no auth until needed"
+    ]
+  },
+  "do_not": {
+    "delete": [
+      "source folders",
+      "foundation files",
+      "used public assets",
+      "package.json",
+      "pnpm-lock.yaml",
+      "project docs"
+    ],
+    "expose_publicly": [
+      "internal Autobuilder mechanics",
+      "private founder details",
+      "claims of official Alan Watts or TED affiliation",
+      "unlicensed content claims"
+    ],
+    "change_without_reason": [
+      "startup name",
+      "premium design direction",
+      "pnpm package manager",
+      "manual deploy rule"
+    ],
+    "build": [
+      "generic quote scraper",
+      "rights-risky talk aggregator",
+      "fake therapy claims",
+      "generic meditation clone"
+    ],
+    "drift_toward": [
+      "generic SaaS template",
+      "Noaerth clone",
+      "Calm clone",
+      "TED clone",
+      "random motivational quote site"
+    ]
+  },
+  "autobuilder_strategy": {
+    "north_star": "Make YouAreProfound the premium place people go to understand their life through structured wisdom, reflection, and meaning.",
+    "quality_bar": "Investor-demo-ready, visually premium, responsive, build-clean, emotionally resonant, and product-specific.",
+    "next_priorities": [
+      "expand local Profound Mirror response library",
+      "path detail pages",
+      "expand wisdom/mantra content library",
+      "onboarding quiz",
+      "OG image and SEO polish"
+    ],
+    "safe_improvement_types": [
+      "copy refinement",
+      "visual polish",
+      "responsive fixes",
+      "content structure",
+      "static product demos",
+      "SEO metadata",
+      "accessibility improvements",
+      "build fixes"
+    ],
+    "unsafe_improvement_types": [
+      "automatic Vercel deploy",
+      "automatic GitHub push",
+      "unlicensed content ingestion",
+      "database/auth complexity without request",
+      "deleting source code",
+      "adding huge media assets"
+    ],
+    "preferred_task_size": "medium",
+    "build_frequency_guidance": "Run pnpm build after meaningful source changes.",
+    "deployment_guidance": "manual_vercel_only"
+  },
+  "cleanup_policy": {
+    "safe_to_delete": [
+      "node_modules",
+      ".next",
+      ".turbo",
+      ".vercel/cache",
+      "dist",
+      "build",
+      "coverage",
+      "playwright-report",
+      "test-results",
+      ".cache",
+      ".parcel-cache",
+      "*.log",
+      ".DS_Store"
+    ],
+    "must_preserve": [
+      "app",
+      "components",
+      "lib",
+      "public assets used by site",
+      "package.json",
+      "pnpm-lock.yaml",
+      "config files",
+      "RECOVERY_NOTES.md",
+      "AUTOBUILDER_FOUNDATION.json",
+      ".autobuilder"
+    ],
+    "large_file_review_paths": [
+      "public",
+      "assets",
+      "media",
+      "content",
+      "data",
+      "docs",
+      ".autobuilder"
+    ],
+    "post_build_cleanup_commands": [
+      "rm -rf node_modules .next .turbo .vercel/cache dist build coverage playwright-report test-results .cache .parcel-cache",
+      "find . -name '.DS_Store' -type f -delete",
+      "find . -name '*.log' -type f -delete"
+    ]
+  },
+  "last_recovery_summary": {
+    "date": "2026-05-10",
+    "restored": [
+      "Full premium homepage (replaced external iframe to noaerth.com)",
+      "Component layout reorganized into components/app/",
+      "Tailwind v4 directive in globals.css"
+    ],
+    "improved": [
+      "Working Profound Mirror textarea preview with local demo response engine",
+      "Layout metadata, OpenGraph, and SEO keywords",
+      "Pinned turbopack.root and added typecheck script",
+      "pnpm.onlyBuiltDependencies for sharp/unrs-resolver"
+    ],
+    "fixed": [
+      "Imports for app-shell components",
+      ".gitignore (allows .env.example)",
+      "Stale package.json bytes (clean overwrite)"
+    ],
+    "removed": [
+      "lib/supabase.ts and @supabase/supabase-js dependency",
+      "clsx dependency",
+      "Generic Create Next App metadata"
+    ],
+    "remaining_risks": [
+      "Short attributed quotes may need legal review at scale",
+      "No OG image asset yet for social sharing",
+      "/api/checkout is a placeholder; remove or implement when payments are scoped"
+    ]
+  }
+}

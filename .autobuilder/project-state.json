@@ -1,0 +1,48 @@
+{
+  "schema_version": "1.0",
+  "project_folder": "youareprofound",
+  "startup_name": "YouAreProfound",
+  "last_updated": "2026-05-10",
+  "status": "ready",
+  "build_status": {
+    "pnpm_install": "pass",
+    "lint": "pass",
+    "typecheck": "pass",
+    "build": "pass",
+    "last_error": ""
+  },
+  "deploy_status": {
+    "vercel_ready": true,
+    "last_deployed": "",
+    "deployment_url": "",
+    "manual_deploy_command": "cd /Users/joshuadavis/startups/youareprofound && pnpm install && pnpm build && vercel --prod"
+  },
+  "disk_status": {
+    "size_before": "1.6G (with node_modules and .next)",
+    "size_after": "348K (source only; run pnpm install before dev or deploy)",
+    "cleanup_performed": true,
+    "large_files_flagged": []
+  },
+  "recent_changes": [
+    "Replaced iframe homepage with full premium landing experience",
+    "Moved app-shell components into components/app/",
+    "Added components/app/ProfoundMirrorPreview.tsx with local demo response engine",
+    "Wired Profound Mirror preview into /app at #mirror",
+    "Migrated globals.css to Tailwind v4 @import syntax",
+    "Updated app/layout.tsx metadata for SEO and social",
+    "Pinned turbopack.root, added typecheck script and pnpm.onlyBuiltDependencies",
+    "Removed lib/supabase.ts, @supabase/supabase-js, and clsx"
+  ],
+  "open_issues": [
+    "/api/checkout is a placeholder Stripe route; decide to remove or implement",
+    "No OG image asset yet (metadata.openGraph.images not set)"
+  ],
+  "next_actions": [
+    "Expand Profound Mirror local response library",
+    "Add /paths/[slug] detail pages",
+    "Onboarding quiz for path recommendation",
+    "OG image + canonical URL env variable",
+    "Decide on auth/payments only when explicitly requested"
+  ],
+  "last_agent_notes": "Recovery + rebuild + autobuilder foundation completed 2026-05-10. Build is clean. Manual Vercel deploy only."
+}
